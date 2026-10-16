@@ -732,7 +732,7 @@ adb shell wm size
 - [ ] **Step 3: Inspecionar o APK com o REA antes de instalar**
 
 Usar `mcp__rea__inspect_android_package` em `android/app/build/outputs/apk/debug/app-debug.apk`.
-Expected: pacote `com.pedro3720.teladois`, `minSdk 29`, `targetSdk 36`, **nenhuma permissão** pedida, única Activity exportada `MainActivity` (LAUNCHER), `allowBackup=false`.
+Expected: pacote `com.pedro3720.teladois`, `minSdk 29`, `targetSdk 36`, `allowBackup=false`; Activity exportada só `MainActivity` (LAUNCHER). Esperados e aceitáveis por virem das bibliotecas AndroidX: a permissão própria `com.pedro3720.teladois.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION` (nível signature, do androidx.core) e o receiver `androidx.profileinstaller.ProfileInstallReceiver` exportado mas protegido por `android.permission.DUMP`. Qualquer outra permissão ou componente exportado é um problema a investigar.
 
 - [ ] **Step 4: Instalar, abrir e tirar print (Bash)**
 
