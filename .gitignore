@@ -1,0 +1,22 @@
+# Gradle / Android
+.gradle/
+build/
+/android/local.properties
+/android/.kotlin/
+captures/
+.externalNativeBuild/
+.cxx/
+*.iml
+.idea/
+
+# Assinatura — nunca versionar
+*.jks
+*.keystore
+keystore.properties
+
+# Artefatos entregues ao usuário
+/builds/
+
+# Sistema
+Thumbs.db
+.DS_Store
