@@ -9,10 +9,16 @@ captures/
 *.iml
 .idea/
 
-# Assinatura — nunca versionar
+# Assinatura e segredos — nunca versionar
 *.jks
 *.keystore
 keystore.properties
+.env
+.env.*
+*.pem
+*.p12
+*.key
+secrets/
 
 # Artefatos entregues ao usuário
 /builds/
